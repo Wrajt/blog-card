@@ -1,0 +1,87 @@
+:root {
+    --bg-color: #F4D04E;
+    --bg-card:#FFFFFF;
+    --text1: #111111;
+    --text2: #6B6B6B;
+}
+
+body {
+    font-family: "Figtree", sans-serif;
+    margin: 0;
+    background-color: var(--bg-color);
+}
+
+.card{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--bg-card);
+    border-radius: 20px;
+    width: 327px;
+}
+
+@media(min-width: 760px){
+    .card{
+        width: 384px;
+    }
+}
+#header{
+    height:200px;
+    width: 279px;
+    object-fit: cover;
+}
+
+@media(min-width: 760px){
+    #header{
+        height:200px;
+        width:336px;
+    }
+}
+.content{
+    display:flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.date{
+    font-weight: 500;
+    font-size: 12px;
+
+}
+h1{
+    font-size:24px;
+    font-weight: 800;
+    letter-spacing: 0;
+}
+
+h2{
+    font-size:14px;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+.tag{
+    background-color: var(--bg-color);
+    font-size: 12px;
+    font-weight: 800;
+    width: 73px;
+    height: 26px;
+    border-radius: 4px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.items{
+    margin: 24px 24px 24px 24px;
+}
+#avatar{
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+}
+.author{
+    font-weight:800;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
